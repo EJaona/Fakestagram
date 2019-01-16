@@ -55,6 +55,10 @@
   transform: scale(1.1);
 }
 
+.liked {
+  color: red;
+}
+
 .likes-counter {
   margin-left: 2%;
 }

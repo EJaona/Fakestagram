@@ -4,10 +4,14 @@ import SearchBar from "./SearchBar";
 import Options from "./Options";
 import "./Header.css";
 
-const SearchContainer = () => (
+const SearchContainer = props => (
   <div className="search-container">
     <Logo />
-    <SearchBar />
+    <SearchBar
+      search={props.search}
+      searchFilter={props.searchFilter}
+      handleSearchInput={props.handleSearchInput}
+    />
     <Options />
   </div>
 );

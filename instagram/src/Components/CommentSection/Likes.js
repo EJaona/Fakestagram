@@ -5,10 +5,18 @@ class PostLikes extends Component {
     likes: this.props.likes
   };
 
-  addLikes = () => {
-    this.setState({
-      likes: ++this.state.likes
-    });
+  addLikes = e => {
+    e.target.classList.toggle("liked");
+
+    if (e.target.className.includes("liked")) {
+      this.setState(prevState => ({
+        likes: ++prevState.likes
+      }));
+    }
+  };
+
+  commentInputFocus = e => {
+    document.querySelector(".comment-input").focus();
   };
 
   render() {
@@ -17,7 +25,10 @@ class PostLikes extends Component {
         <div className="likes">
           <i className="far fa-heart fa-lg" onClick={this.addLikes} />
           <div className="comment-logo">
-            <i className="far fa-comment fa-lg" />
+            <i
+              className="far fa-comment fa-lg"
+              onClick={this.commentInputFocus}
+            />
           </div>
         </div>
         <p className="likes-counter" style={{ fontWeight: "bold" }}>
