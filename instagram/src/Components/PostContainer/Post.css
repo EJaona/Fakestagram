@@ -1,0 +1,20 @@
+.post-container {
+  width: 60%;
+  margin: 5% 0;
+  border: 1px solid gray;
+}
+
+.post-header {
+  display: flex;
+}
+
+.post-header img {
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+  margin: 2%;
+}
+
+.post-body img {
+  width: 100%;
+}

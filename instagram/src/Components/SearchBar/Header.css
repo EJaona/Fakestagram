@@ -1,0 +1,37 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+
+.search-container {
+  display: flex;
+  padding-bottom: 2%;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.logo {
+  display: flex;
+  width: 15%;
+}
+
+.logo i {
+  margin: 5% 0;
+  padding-right: 7%;
+  border-right: 1px solid black;
+}
+
+.logo h1 {
+  font-family: "Grand Hotel", cursive;
+  font-weight: 150;
+  margin: 1% 5%;
+}
+
+.search-container input {
+  margin-top: 8%;
+  font-family: "FontAwesome", "<<Next Font for words>>";
+}
+
+.options {
+  width: 20%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+}
