@@ -18,42 +18,20 @@ class PostsPage extends Component {
     });
   };
 
-  handleSearchInput = e => {
+//   handleSearchInput = e => {
+//     this.setState({
+//       search: e.target.value
+//     });
+//   };
+
+handleSearchInput = e => {
     this.setState({
-      search: e.target.value
+      search: e.target.value,
+      display: this.state.list.filter(post => post.username.includes(e.target.value))
     });
   };
 
-  searchFilter = e => {
-    e.preventDefault();
-    if (this.state.search === null) {
-      this.setState({
-        display: this.state.display,
-        search: ""
-      });
-    } else {
-      this.setState({
-        display: this.state.list.filter(item =>
-          item.username.includes(this.state.search)
-        ),
-        search: ""
-      });
-    }
-  };
 
-  toggleLiked = (id) => {
-      this.setState({
-          list: this.state.list.map(post => {
-              if (post.id === id){
-                  return(
-                      post.liked = !post.liked
-                  )
-              }
-            return post;
-          })
-      })
-     
-  }
 
   displayLiked = () => {
       this.setState({
