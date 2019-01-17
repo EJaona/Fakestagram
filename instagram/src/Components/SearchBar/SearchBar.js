@@ -1,7 +1,7 @@
 import React from "react";
 
 const SearchBar = props => (
-  <form onSubmit={props.searchFilter}>
+  <form onSubmit={props.searchFilter} className="search-form">
     <input
       type="text"
       placeholder="&#xF002; Search"

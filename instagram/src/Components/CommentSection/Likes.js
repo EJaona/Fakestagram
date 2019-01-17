@@ -12,6 +12,8 @@ class PostLikes extends Component {
       this.setState(prevState => ({
         likes: ++prevState.likes
       }));
+    } else {
+      this.setState(prevState => ({ likes: --prevState.likes }));
     }
   };
 

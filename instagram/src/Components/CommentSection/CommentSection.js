@@ -4,16 +4,16 @@ import Moment from "moment";
 
 class CommentSection extends Component {
   state = {
-    comments: [],
+    comments: this.props.comments,
     text: "",
-    username: "Guest_User"
+    username: " "
   };
 
-  componentDidMount() {
-    this.setState({
-      comments: this.props.comments
-    });
-  }
+  // componentDidMount() {
+  //   this.setState({
+  //     comments: this.props.comments
+  //   });
+  // }
 
   handleChange = e => {
     this.setState({
@@ -21,17 +21,17 @@ class CommentSection extends Component {
     });
   };
 
-  addNewComment = (e, index) => {
+  addNewComment = e => {
     e.preventDefault();
     this.setState({
       comments: [
         ...this.state.comments,
         {
           text: this.state.text,
-          username: this.state.username
+          username: localStorage.getItem("username")
         }
       ],
-      comment: ""
+      text: ""
     });
   };
 
@@ -49,7 +49,7 @@ class CommentSection extends Component {
         <p> {Moment("20170710").fromNow()}</p>
         <hr />
         <Form
-          comment={this.state.comment}
+          comment={this.state.text}
           handleChange={this.handleChange}
           addNewComment={this.addNewComment}
         />
