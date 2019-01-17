@@ -61,10 +61,16 @@ class PostsPage extends Component {
       })
   }
 
+  logOut = () => {
+      localStorage.clear()
+      window.location.reload()
+  }
+
   render() {
     return (
       <div className="App">
         <Search
+          logOut={this.logOut}
           handleSearchInput={this.handleSearchInput}
           searchFilter={this.searchFilter}
           search={this.state.search}

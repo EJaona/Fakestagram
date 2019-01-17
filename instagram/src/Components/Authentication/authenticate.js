@@ -1,6 +1,6 @@
 import React from "react";
 
-const authenticate = App => Login =>
+const authenticate = Component1 => Component2 =>
   class extends React.Component {
     constructor(props) {
       super(props);
@@ -20,8 +20,8 @@ const authenticate = App => Login =>
         });
     }
     render() {
-      if (this.state.isLoggedIn) return <App />;
-      return <Login />;
+      if (this.state.isLoggedIn) return <Component1 />;
+      return <Component2 />;
     }
   };
 

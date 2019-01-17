@@ -12,7 +12,7 @@ const SearchContainer = props => (
       searchFilter={props.searchFilter}
       handleSearchInput={props.handleSearchInput}
     />
-    <Options displayLiked={props.displayLiked} />
+    <Options displayLiked={props.displayLiked} logOut={props.logOut} />
   </div>
 );
 

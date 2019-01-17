@@ -17,13 +17,13 @@
 .logo {
   display: flex;
   width: 15%;
-  margin: 0.5% 0 0 25%;
+  margin: 0.5% 0 0 4%;
 }
 
 .logo i {
   margin: 5% 0;
   padding-right: 2%;
-   color: #d6249f;;
+   color: #d6249f;
 }
 
 .logo h1 {
@@ -46,13 +46,23 @@
   font-family: "FontAwesome", "<<Next Font for words>>";
 }
 
+.search-form input:focus {
+  outline: none;
+  border-color: #50BFE6; 
+}
+
 .options {
-  width: 11%;
-  margin: 1% 25% 0 5%;
+  width: 15%;
+  margin: 1% 2% 0 1%;
   display: flex;
   justify-content: space-around;
 }
 
 .options i:hover {
   transform: scale(1.1);
+  color: #50BFE6;
+}
+
+.user p {
+  margin: 0 -20%;
 }

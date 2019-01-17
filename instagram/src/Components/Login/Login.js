@@ -15,8 +15,7 @@ class Login extends Component {
   };
 
   submitLogin = e => {
-    const username = this.state.username;
-    localStorage.setItem("username", username);
+    localStorage.setItem("username", this.state.username);
     window.location.reload();
   };
 
@@ -29,12 +28,14 @@ class Login extends Component {
           style={{
             fontFamily: "Grand Hotel",
             fontSize: "3.5rem",
-            color: "#4267B2"
+            color: "#4267B2",
+            textAlign: 'center'
           }}
         >
-          Welcome to FakestaGram
+          Welcome to <span className="main-login-header">FakestaGram</span>
+
         </h1>
-        <p style={{ fontWeight: "bold" }}>Please login..</p>
+        <h2 style={{ fontWeight: "bold" }}>Please login..</h2>
         <div className="login-div">
           <div className="username field">
             <input
