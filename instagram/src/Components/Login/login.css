@@ -1,8 +1,31 @@
+.login-header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  margin-top: -5%;
+  opacity: 0.9;
+  height: 70px;
+  display: flex;
+  padding-bottom: 2%;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  background: white;
+}
+
+.login-logo {
+  width: 30%;
+}
+
+.login-header .user {
+  margin: 1% 10% 0 0;
+  color: #4267b2;
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
+  margin-top: 5%;
   align-items: center;
 }
 

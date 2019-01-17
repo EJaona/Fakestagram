@@ -7,8 +7,8 @@ class PostLikes extends Component {
 
   addLikes = e => {
     e.target.classList.toggle("liked");
-
     if (e.target.className.includes("liked")) {
+      
       this.setState(prevState => ({
         likes: ++prevState.likes
       }));

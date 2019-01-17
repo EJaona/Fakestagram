@@ -10,8 +10,8 @@ const PostContainer = props => (
     {props.list.map(post => (
       <div className="post-container">
         <Header thumbNail={post.thumbnailUrl} username={post.username} />
-        <PostBody img={post.imageUrl} />
-        <Comments likes={post.likes} comments={post.comments} />
+        <PostBody img={post.imageUrl} liked={post.liked} />
+        <Comments likes={post.likes} comments={post.comments} toggleLiked={props.toggleLiked} id={post.id} />
       </div>
     ))}
   </React.Fragment>

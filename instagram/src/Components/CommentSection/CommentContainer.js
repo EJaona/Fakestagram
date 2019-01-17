@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const CommentContainer = props => (
   <div className="comment-container">
-    <Likes likes={props.likes} />
+    <Likes likes={props.likes} toggleLiked={props.toggleLiked} id={props.id} />
     <div className="comments">
       <CommentSection comments={props.comments} />
     </div>

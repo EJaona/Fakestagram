@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./login.css";
+import LoginHeader from './LoginHeader';
 
 class Login extends Component {
   state = {
@@ -21,6 +22,8 @@ class Login extends Component {
 
   render() {
     return (
+        <React.Fragment>
+        <LoginHeader />
       <form className="login-form">
         <h1
           style={{
@@ -29,7 +32,7 @@ class Login extends Component {
             color: "#4267B2"
           }}
         >
-          Welcome to CloneGram
+          Welcome to FakestaGram
         </h1>
         <p style={{ fontWeight: "bold" }}>Please login..</p>
         <div className="login-div">
@@ -68,6 +71,7 @@ class Login extends Component {
           </div>
         </div>
       </form>
+      </React.Fragment>
     );
   }
 }

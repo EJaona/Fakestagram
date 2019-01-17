@@ -41,6 +41,26 @@ class PostsPage extends Component {
     }
   };
 
+  toggleLiked = (id) => {
+      this.setState({
+          list: this.state.list.map(post => {
+              if (post.id === id){
+                  return(
+                      post.liked = !post.liked
+                  )
+              }
+            return post;
+          })
+      })
+     
+  }
+
+  displayLiked = () => {
+      this.setState({
+          display: this.state.list.filter(post => post.liked)
+      })
+  }
+
   render() {
     return (
       <div className="App">
@@ -48,8 +68,9 @@ class PostsPage extends Component {
           handleSearchInput={this.handleSearchInput}
           searchFilter={this.searchFilter}
           search={this.state.search}
+          displayLiked={this.displayLiked}
         />{" "}
-        <Post list={this.state.display} />
+        <Post list={this.state.display} toggleLiked={this.toggleLiked} />
       </div>
     );
   }

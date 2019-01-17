@@ -6,7 +6,7 @@ const HeaderLogo = () => (
     className="logo"
     style={{ color: "black", textDecoration: "none" }}
   >
-    <i className="fab fa-instagram fa-lg fa-2x" /> <h1>CloneGram</h1>
+    <i className="fab fa-instagram fa-lg fa-2x" /> <h1>FakestaGram</h1>
   </a>
 );
 
