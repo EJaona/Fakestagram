@@ -43,11 +43,12 @@
   height: 40px;
   border-radius: 2%;
   border: 0px solid;
-  border-bottom: 1px solid #4267b2;
+  border-bottom: 1.2px solid #4267b2;
 }
 
 .field input:focus {
   outline: none;
+  border-color: #50bfe6;
 }
 
 .login-submit {
@@ -66,10 +67,8 @@
   color: white;
   border-color: white;
   background: #4267b2;
-  transform: scale(.99);
+  transform: scale(0.99);
 }
-
-
 
 .remember-me {
   display: flex;
