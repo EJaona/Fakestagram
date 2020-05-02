@@ -1,0 +1,70 @@
+.comment-container {
+  position: relative;
+}
+
+.comments {
+  width: 97%;
+  margin: 0 auto;
+}
+.comment {
+  margin: 0 auto;
+}
+
+.comment-form {
+  display: flex;
+}
+
+.comment-form input {
+  width: 90%;
+  border: 0px solid;
+  padding-bottom: 1%;
+  margin: 1% 0;
+}
+
+.comment-form input:focus {
+  outline: none;
+}
+
+.comment-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  margin-bottom: 2%;
+}
+
+.menu-dot {
+  margin: 2%;
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+}
+
+.likes {
+  height: 30px;
+  padding: 2%;
+  font-weight: bold;
+  display: flex;
+}
+
+.likes i {
+  margin-right: 3%;
+}
+
+.likes i:hover {
+  transform: scale(1.1);
+}
+
+.liked {
+  color: red;
+}
+
+.likes-counter {
+  margin-left: 2%;
+}
+
+.comment-logo {
+  margin: -0.5%;
+  transform: rotateY(180deg);
+}

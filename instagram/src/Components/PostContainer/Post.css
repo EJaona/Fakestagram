@@ -1,0 +1,23 @@
+.post-container {
+  width: 40%;
+  margin: 5% auto;
+  border: 1px solid gray;
+  border-radius: 1%;
+  background: white;
+}
+
+.post-header {
+  display: flex;
+}
+
+.post-header img {
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+  margin: 2%;
+}
+
+.post-body img {
+  width: 100%;
+  height: 500px;
+}

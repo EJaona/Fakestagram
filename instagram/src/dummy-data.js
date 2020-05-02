@@ -11,8 +11,8 @@ const dummyData = [
     comments: [
       {
         username: "philzcoffee",
-        text:
-          "We've got more than just delicious coffees to offer at our shops!"
+        text:(
+          "We've got more than just delicious coffees to offer at our shops!")
       },
       {
         username: "biancasaurus",
@@ -22,7 +22,9 @@ const dummyData = [
         username: "martinseludo",
         text: "Can't wait to try it!"
       }
-    ]
+    ],
+    liked: false,
+    id: 1
   },
   {
     username: "fortnite",
@@ -53,7 +55,9 @@ const dummyData = [
         username: "dennis_futbol",
         text: "Is"
       }
-    ]
+    ],
+    liked: false,
+    id: 2
   },
   {
     username: "playhearthstone",
@@ -76,7 +80,9 @@ const dummyData = [
         username: "awesomebt28",
         text: "I like how Half Dome looks so old and useless"
       }
-    ]
+    ],
+    liked: false,
+    id: 3
   }
 ];
 

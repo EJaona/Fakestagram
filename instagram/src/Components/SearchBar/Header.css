@@ -1,0 +1,68 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+
+.search-container {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  margin-top: -5%;
+  opacity: 0.9;
+  height: 70px;
+  display: flex;
+  padding-bottom: 2%;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  background: white;
+}
+
+.logo {
+  display: flex;
+  width: 15%;
+  margin: 0.5% 0 0 4%;
+}
+
+.logo i {
+  margin: 5% 0;
+  padding-right: 2%;
+   color: #d6249f;
+}
+
+.logo h1 {
+  font-family: "Grand Hotel", cursive;
+  font-weight: 150;
+  margin: 2%;
+  height: 45px;
+  padding-left: 3%;
+  border-left: 1px solid black;
+  color: #4267B2;
+}
+
+.search-form input {
+  margin-top: 8%;
+  background: white;
+  width: 200px;
+  height: 30px;
+  border-color: black;
+  border-radius: 10px;
+  font-family: "FontAwesome", "<<Next Font for words>>";
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #50BFE6; 
+}
+
+.options {
+  width: 15%;
+  margin: 1% 2% 0 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.options i:hover {
+  transform: scale(1.1);
+  color: #50BFE6;
+}
+
+.user p {
+  margin: -10% -20%;
+}
